@@ -10,7 +10,7 @@ from tensorflow import keras
 from keras.preprocessing.image import load_img,img_to_array,ImageDataGenerator
 
 
-model = keras.models.load_model(".\my_model")
+model = keras.models.load_model("my_model")
 
 app = Flask(__name__)
 
