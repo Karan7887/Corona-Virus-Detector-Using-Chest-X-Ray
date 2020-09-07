@@ -1,0 +1,172 @@
+*, body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+.container{
+
+    height:100vh;
+    width:100%;
+    
+    
+    background: linear-gradient(90deg, rgba(164, 29, 29, 0.856) 0%, rgba(0, 0, 0, 0.651) 87%),url("https://www.counterpointresearch.com/wp-content/uploads/2020/02/Coronavirus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;   
+}
+.cont2{
+    width:100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+
+.d-flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.mainH{
+    padding:10px;
+    margin-right:60px;
+    padding-left: 35px;
+    color:white;
+    font-size:80px;
+    border-right:1px solid #f1f1f1;
+}
+
+.subH{
+    padding: 10px;
+    color: #dfdbdb;
+    font-size: 36px;
+}
+
+.subH2{
+    padding: 10px;
+    color: #dfdbdb;
+    font-size: 32px;   
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    padding:8px 25px;
+    border:2px solid rgb(88, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius:25px;
+    transition: 0.3s;
+    font-size:22px;
+    font-weight:bold;
+    cursor: pointer;
+    color: rgba(164, 29, 29, 0.856);
+
+}
+.btn:hover{
+    background-color:rgba(164, 29, 29, 0.856);
+    color: white; 
+}
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top:1em;
+  }
+  .button:hover {
+    background: #ddd;
+  }
+  #fileElem {
+    display: none;
+  }
+
+.nav{
+    padding:1em 2em;
+    box-shadow: 0px 2px 15px rgba(19, 0, 0, 0.308);
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.nav>.logo{
+    width:60px;
+}
+.nav h2{
+    color:rgba(164, 29, 29, 0.856);
+    font-size: 26px;
+    margin-left:1em;
+}
+
+.p-2{
+    padding: 1em;
+}
+.p-3{
+    padding: 1.5em;
+}
+.p-4{
+    padding: 2em;
+}
+
+
+#drop-area {
+    border: 2px dashed rgb(138, 138, 138);
+    border-radius: 20px;
+    width: 80%;
+    margin: 50px 0;
+    padding: 20px;
+    min-height:200px;
+  }
+#drop-area.highlight {
+border: 4px dashed rgba(164, 29, 29, 0.856);
+}
+
+.imgCont{
+    margin:20px;
+    border-radius: 10px;
+    
+}
+.imgCont img{
+    width:100%;
+    border-radius: 10px;
+}
+
+@media (max-width:800px){
+    .container,.grid2{
+        display: block;
+       
+    }
+
+    .container>div{
+        padding:25px;
+    }
+
+    .mainH{
+        margin-right:0px;
+        font-size: 45px;
+        border-right:0px solid #f1f1f1;
+        padding:0;
+    }
+    .subH{
+        font-size: 22px;
+
+    }
+
+    .subH2{
+        font-size:18px;
+    }
+}

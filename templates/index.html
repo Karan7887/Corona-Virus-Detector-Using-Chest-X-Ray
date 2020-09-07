@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karan Chod Project</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/style.css') }}",type="text/css">
+    <script src="{{ url_for('static' , filename = 'js/main.js') }}"></script>
+   
+</head>
+<body>
+    <div class="container grid2 ">
+        <div class="d-flex-col-center"  >
+            <h1 class="mainH" >
+                Coronavirus Predictor
+            </h1>
+        </div>
+        <div class="d-flex-col-center">
+            <h2 class="subH">Steps To Use this: </h2>
+            <ol>
+                <li class="subH2">Upload image of Chest X-Ray. </li>
+                <li class="subH2"> Click On Submit Button. </li>
+                <li class="subH2"> You are Done.. :-) </li>
+            </ol>
+
+            <div>
+                <a href="#cont2" class="btn"> Get Started  </a>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="cont2" id="cont2">
+        <div class="nav">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/765px-SARS-CoV-2_without_background.png" alt="" class="logo">
+            <h2> Coronavirus Predictor </h2>
+        </div>
+        <div class="grid2">
+            <div class="p-3">
+                <h1> Upload Image </h1>
+                <div id="drop-area" >
+                    <form action="/success" method="POST" enctype="multipart/form-data" >
+                        <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+                        <input type="file" id="fileElem" name="image" accept="image/*" >
+                        <label class="button" for="fileElem">Select some files</label>
+                        
+                        <div class="imgCont" id="gallery">
+                            
+                        </div>
+
+                        <div>
+                            <button class="btn"> Prediict </button>
+                        </div>
+                            
+                    </form>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

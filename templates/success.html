@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karan Chod Project</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/style.css') }}",type="text/css">
+    <script src="{{ url_for('static' , filename = 'js/main.js') }}"></script>
+</head>
+<body>
+    
+    <div class="cont2" id="cont2">
+        <div class="nav">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/765px-SARS-CoV-2_without_background.png" alt="" class="logo">
+            <h2> Coronavirus Predictor </h2>
+        </div>
+        <div class="grid2">
+            <div class="p-3">
+                <h1> Upload Image </h1>
+                <div id="drop-area" >
+                    <form enctype="multipart/form-data" method="POST">
+                        <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+                        <input type="file" id="fileElem" name="image" accept="image/*" onchange="handleFiles(this.files)">
+                        <label class="button" for="fileElem">Select some files</label>
+                        
+                        <div class="imgCont" id="gallery">
+                            
+                        </div>
+
+                        <div>
+                            <button class="btn"> Prediict </button>
+                        </div>
+                            
+                    </form>
+
+                </div>
+            </div>
+            <form action="/" method="GET" enctype="multipart/form-data">
+                <div class="p-3">
+                    
+                    <h1> Result </h1>
+                    <br>
+                    <br>
+                    <h2>You report is {{your_pred}}<h2>
+                    <button type="submit" class="btn btn-primary btn-lg">Check For Another Response </button> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>
