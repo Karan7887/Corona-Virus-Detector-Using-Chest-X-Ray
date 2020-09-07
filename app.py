@@ -32,7 +32,7 @@ def success():
         # f.save(f.filename)  
 		
 		if(image_file):
-			image_location = os.path.join(".\static",image_file.filename)
+			image_location = image_file.filename
 			image_file.save(image_location)
 			pred = prediction(image_location,model)
 			corona_prob = float(pred[0][0])
